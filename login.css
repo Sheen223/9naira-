@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#login-page {
+  display: flex;
+  height: 100vh;
+}
+
+/* ---- Left Panel ---- */
+#login-left {
+  background-color: #7f56e7e3;
+  color: #fff;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px;
+}
+
+#login-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+#login-left h1 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.login-subtext {
+  font-size: 1.1rem;
+  opacity: 0.85;
+  color: #fff !important;
+  max-width: 380px;
+  margin-bottom: 30px;
+}
+
+.crypto-list {
+  font-size: 0.95rem;
+  letter-spacing: 3px;
+  font-weight: 500;
+  opacity: 0.75;
+  color: #fff !important;
+}
+
+/* ---- Right Panel ---- */
+#login-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+}
+
+#login-card {
+  background: #fff;
+  padding: 50px 45px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+#login-card h2 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 6px;
+}
+
+.login-card-sub {
+  font-size: 0.95rem;
+  color: #888 !important;
+  margin-bottom: 30px;
+}
+
+/* ---- Inputs ---- */
+.input-group-login {
+  margin-bottom: 20px;
+}
+
+.input-group-login label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  border: 1.5px solid #ddd;
+  border-radius: 10px;
+  padding: 10px 14px;
+  gap: 10px;
+  background: #fafafa;
+  transition: border 0.2s;
+}
+
+.input-wrapper:focus-within {
+  border-color: #7f56e7;
+}
+
+.input-wrapper i {
+  color: #aaa;
+  font-size: 0.95rem;
+}
+
+.input-wrapper input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 0.95rem;
+  width: 100%;
+  color: #333;
+}
+
+.toggle-password {
+  cursor: pointer;
+  margin-left: auto;
+  transition: color 0.2s;
+}
+
+.toggle-password:hover {
+  color: #7f56e7;
+}
+
+/* ---- Options ---- */
+#login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  margin-bottom: 25px;
+  color: #555;
+}
+
+#login-options label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+#forgot-link {
+  color: #7f56e7;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#forgot-link:hover {
+  text-decoration: underline;
+}
+
+/* ---- Button ---- */
+#login-btn {
+  width: 100%;
+  padding: 13px;
+  background-color: #7f56e7;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+#login-btn:hover {
+  background-color: #6a3fd4;
+}
+
+/* ---- Sign up link ---- */
+#signup-text {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #888 !important;
+}
+
+#signup-text a {
+  color: #7f56e7;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#signup-text a:hover {
+  text-decoration: underline;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+  body {
+    overflow-y: auto;
+  }
+
+  #login-page {
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  #login-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    height: auto;
+  }
+
+  #login-left h1 {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+    color: #fff;
+  }
+
+  .login-subtext,
+  .crypto-list {
+    display: none;
+  }
+
+  #login-logo {
+    margin-bottom: 0;
+    font-size: 1.4rem;
+  }
+
+  #login-right {
+    flex: 1;
+    padding: 30px 20px;
+    background-color: #f5f5f5;
+  }
+
+  #login-card {
+    padding: 35px 25px;
+  }
+}

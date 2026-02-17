@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>9aira - Login</title>
+  <link rel="icon" type="image/x-icon" href="images/logo.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+  <div id="login-page">
+
+    <!-- Left Panel -->
+    <div id="login-left">
+      <a href="index.html" id="login-logo">
+        <img src="images/logo.png" alt="9aira logo" width="45" height="45">
+        <span>9aira</span>
+      </a>
+      <h1>Welcome back.</h1>
+      <p class="login-subtext">Convert your crypto to Naira — fast, secure, and reliable.</p>
+      <p class="crypto-list">BTC  •  ETH  •  SOL  •  SUI  •  USDT  •  USDC</p>
+    </div>
+
+    <!-- Right Panel -->
+    <div id="login-right">
+      <div id="login-card">
+        <h2>Sign In</h2>
+        <p class="login-card-sub">Enter your details to continue</p>
+
+        <div class="input-group-login">
+          <label for="email">Email</label>
+          <div class="input-wrapper">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" id="email" placeholder="you@example.com">
+          </div>
+        </div>
+
+        <div class="input-group-login">
+          <label for="password">Password</label>
+          <div class="input-wrapper">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" id="password" placeholder="••••••••">
+            <i class="fa-solid fa-eye toggle-password" id="togglePassword"></i>
+          </div>
+        </div>
+
+        <div id="login-options">
+          <label><input type="checkbox"> Remember me</label>
+          <a href="demo.html" id="forgot-link">Forgot password?</a>
+        </div>
+
+       <button id="login-btn" onclick="window.location.href='demo.html'">Sign In</button>
+
+        <p id="signup-text">Don't have an account? <a href="sign-up.html">Sign up</a></p>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    // Toggle password visibility
+    document.getElementById('togglePassword').addEventListener('click', function () {
+      const input = document.getElementById('password');
+      const icon = this;
+      if (input.type === 'password') {
+        input.type = 'text';
+        icon.classList.replace('fa-eye', 'fa-eye-slash');
+      } else {
+        input.type = 'password';
+        icon.classList.replace('fa-eye-slash', 'fa-eye');
+      }
+    });
+  </script>
+
+</body>
+</html>

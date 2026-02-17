@@ -1,0 +1,424 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---- Navbar ---- */
+.navbar {
+  background-color: transparent !important;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff !important;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.1rem;
+  color: #fff !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #CFA5E6 !important;
+}
+
+.navbar-toggler {
+  border-color: rgba(255,255,255,0.5);
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+#navbarNav {
+  background-color: #7f56e7;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 8px;
+}
+
+#nav-login-btn {
+  background-color: #fff !important;
+  color: #7f56e7 !important;
+  border-radius: 8px !important;
+  padding: 6px 16px !important;
+  font-weight: 600 !important;
+  margin-left: 8px !important;
+}
+
+#nav-login-btn:hover {
+  background-color: #CFA5E6 !important;
+  color: #fff !important;
+}
+
+/* ---- Hero ---- */
+#title {
+  background-color: #7f56e7e3;
+  color: #fff;
+  padding-bottom: 40px;
+}
+
+.hero-content {
+  padding: 0 40px;
+}
+
+.hero-text {
+  padding: 20px 0;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.hero-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.crypto-highlight {
+  color: #ffffff;
+  font-weight: 900;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.crypto-list {
+  font-size: 1rem;
+  letter-spacing: 3px;
+  margin: 20px 0;
+  font-weight: 500;
+  opacity: 0.9;
+  color: #fff !important;
+}
+
+.heading-2 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  opacity: 0.85;
+  color: #fff;
+}
+
+/* ---- Get Started ---- */
+#get-started {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+#get-started h2 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 12px;
+}
+
+#get-started p {
+  font-size: 1rem;
+  color: #888 !important;
+  margin-bottom: 35px;
+}
+
+.btn-convert {
+  background-color: #7f56e7;
+  color: #fff;
+  text-decoration: none;
+  padding: 14px 35px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-convert:hover {
+  background-color: #6a3fd4;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* ---- Features ---- */
+#features {
+  padding: 60px 20px;
+}
+
+.feature-box {
+  text-align: center;
+  padding: 5%;
+}
+
+.mini-icon {
+  color: #CFA5E6;
+  margin-bottom: 10px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.mini-icon:hover {
+  color: #7f56e7e3;
+  transform: scale(1.2);
+}
+
+/* ---- Pricing ---- */
+#pricing {
+  padding: 60px 20px;
+  background-color: #7f56e7e3;
+  text-align: center;
+}
+
+#pricing h2,
+#pricing > p {
+  color: #fff !important;
+}
+
+#pricing-cards {
+  margin-top: 30px;
+  gap: 20px 0;
+  padding: 0 20px;
+}
+
+#pricing .card {
+  border: none;
+  border-radius: 16px;
+  padding: 10px;
+  margin: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#pricing .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.card-featured {
+  background-color: #1a1a1a !important;
+  color: #fff;
+}
+
+.card-featured h2,
+.card-featured h3,
+.card-featured p {
+  color: #fff !important;
+}
+
+.badge-popular {
+  background-color: #7f56e7;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 4px 12px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+/* ---- Testimonials ---- */
+#testimonials {
+  padding: 60px 20px 50px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+
+.testimonial-1 {
+  width: 100px;
+  height: 100px;
+  border-radius: 25%;
+  margin: 20px;
+}
+
+#carouselExampleIndicators {
+  position: relative;
+}
+
+.carousel-indicators [data-bs-slide-to] {
+  background-color: #000;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+#carouselExampleIndicators .carousel-indicators {
+  bottom: -30px;
+}
+
+/* ---- Footer ---- */
+#footer {
+  background-color: #151616;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+#footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 40px 20px;
+}
+
+#footer-left {
+  text-align: left;
+}
+
+#footer-left p {
+  margin: 4px 0;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+#footer-right {
+  text-align: right;
+}
+
+#footer-right p {
+  margin: 0;
+  color: #aaa !important;
+  font-size: 0.9rem;
+}
+
+#footer-email-link {
+  color: #35baea;
+  text-decoration: none;
+}
+
+#footer-whatsapp-link {
+  color: #25D366;
+  text-decoration: none;
+}
+
+#footer-email-link:hover { color: #106584; }
+#footer-whatsapp-link:hover { color: #0b786b; }
+
+#creator-link {
+  color: #fff;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.3s ease;
+}
+
+#creator-link:hover { color: #CFA5E6; }
+
+/* ---- Typography ---- */
+h1 {
+  font-size: 3rem;
+  line-height: 1.5;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  color: #fff;
+}
+
+h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 600;
+}
+
+h3 {
+  font-family: "Merriweather", serif;
+  font-weight: 500;
+}
+
+p {
+  color: #565353cd;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+  .hero-content {
+    padding: 0 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-image {
+    margin-top: 20px;
+  }
+
+  #get-started {
+    padding: 50px 20px;
+  }
+
+  #get-started h2 {
+    font-size: 1.5rem;
+  }
+
+  #features {
+    padding: 40px 10px;
+  }
+
+  .feature-box {
+    padding: 20px 10px;
+  }
+
+  #pricing {
+    padding: 40px 10px;
+  }
+
+  #pricing .card {
+    margin: 10px 0;
+  }
+
+  #testimonials {
+    padding: 40px 15px 50px;
+    font-size: 1rem;
+  }
+
+  #footer-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  #footer-left {
+    text-align: center;
+  }
+
+  #footer-left p {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  #footer-right {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  .btn-convert {
+    width: 100%;
+    justify-content: center;
+  }
+}

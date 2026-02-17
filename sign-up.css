@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  min-height: 100vh;
+}
+
+#signup-page {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ---- Left Panel ---- */
+#signup-left {
+  background-color: #7f56e7e3;
+  color: #fff;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+#signup-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+#signup-left h1 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.signup-subtext {
+  font-size: 1.1rem;
+  opacity: 0.85;
+  color: #fff !important;
+  max-width: 380px;
+  margin-bottom: 30px;
+}
+
+.crypto-list {
+  font-size: 0.95rem;
+  letter-spacing: 3px;
+  font-weight: 500;
+  opacity: 0.75;
+  color: #fff !important;
+  margin-bottom: 40px;
+}
+
+/* ---- Perks ---- */
+#signup-perks {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.perk {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.perk i {
+  color: #CFA5E6;
+  font-size: 1.1rem;
+  width: 20px;
+}
+
+/* ---- Right Panel ---- */
+#signup-right {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #f5f5f5;
+  padding: 50px 20px;
+  overflow-y: auto;
+}
+
+#signup-card {
+  background: #fff;
+  padding: 50px 45px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+#signup-card h2 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 6px;
+}
+
+.signup-card-sub {
+  font-size: 0.95rem;
+  color: #888 !important;
+  margin-bottom: 30px;
+}
+
+/* ---- Name Row ---- */
+.signup-row {
+  display: flex;
+  gap: 15px;
+}
+
+.signup-row .input-group-signup {
+  flex: 1;
+}
+
+/* ---- Inputs ---- */
+.input-group-signup {
+  margin-bottom: 18px;
+}
+
+.input-group-signup label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  border: 1.5px solid #ddd;
+  border-radius: 10px;
+  padding: 10px 14px;
+  gap: 10px;
+  background: #fafafa;
+  transition: border 0.2s;
+}
+
+.input-wrapper:focus-within {
+  border-color: #7f56e7;
+}
+
+.input-wrapper i {
+  color: #aaa;
+  font-size: 0.95rem;
+}
+
+.input-wrapper input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 0.95rem;
+  width: 100%;
+  color: #333;
+}
+
+.toggle-password {
+  cursor: pointer;
+  margin-left: auto;
+  transition: color 0.2s;
+}
+
+.toggle-password:hover {
+  color: #7f56e7;
+}
+
+/* ---- Terms ---- */
+#terms {
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+#terms label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+#terms a {
+  color: #7f56e7;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#terms a:hover {
+  text-decoration: underline;
+}
+
+/* ---- Button ---- */
+#signup-btn {
+  width: 100%;
+  padding: 13px;
+  background-color: #7f56e7;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+#signup-btn:hover {
+  background-color: #6a3fd4;
+}
+
+/* ---- Sign in link ---- */
+#login-text {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #888 !important;
+}
+
+#login-text a {
+  color: #7f56e7;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#login-text a:hover {
+  text-decoration: underline;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+  body {
+    overflow-y: auto;
+  }
+
+  #signup-page {
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  #signup-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    height: auto;
+    position: static;
+  }
+
+  #signup-left h1 {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+    color: #fff;
+  }
+
+  .signup-subtext,
+  .crypto-list,
+  #signup-perks {
+    display: none;
+  }
+
+  #signup-logo {
+    margin-bottom: 0;
+    font-size: 1.4rem;
+  }
+
+  #signup-right {
+    flex: 1;
+    padding: 30px 20px;
+    background-color: #f5f5f5;
+  }
+
+  #signup-card {
+    padding: 35px 25px;
+  }
+}
