@@ -10,6 +10,7 @@ body {
 
 #login-page {
   display: flex;
+  flex-direction: row;
   height: 100vh;
 }
 
@@ -207,7 +208,7 @@ body {
 }
 
 /* ---- Responsive ---- */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   #login-page {
     flex-direction: column;
     min-height: 100vh;
