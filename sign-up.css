@@ -11,6 +11,7 @@ body {
 
 #signup-page {
   display: flex;
+  flex-direction: row;
   min-height: 100vh;
 }
 
@@ -190,9 +191,16 @@ body {
 
 #terms label {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 8px;
   cursor: pointer;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+#terms input[type="checkbox"] {
+  margin-top: 3px;
+  flex-shrink: 0;
 }
 
 #terms a {
@@ -241,8 +249,26 @@ body {
   text-decoration: underline;
 }
 
+/* ---- Demo link ---- */
+#demo-text {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #888 !important;
+  margin-top: 10px;
+}
+
+#demo-text a {
+  color: #7f56e7;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#demo-text a:hover {
+  text-decoration: underline;
+}
+
 /* ---- Responsive ---- */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   body {
     overflow-y: auto;
   }
@@ -257,14 +283,16 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 16px 24px;
+    padding: 12px 20px;
     height: auto;
     position: static;
+    flex: none;
+    min-height: unset;
   }
 
   #signup-left h1 {
     display: block;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 600;
     margin: 0;
     color: #fff;
@@ -278,16 +306,21 @@ body {
 
   #signup-logo {
     margin-bottom: 0;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+  }
+
+  #signup-logo img {
+    width: 28px;
+    height: 28px;
   }
 
   #signup-right {
     flex: 1;
-    padding: 30px 20px;
+    padding: 20px 15px;
     background-color: #f5f5f5;
   }
 
   #signup-card {
-    padding: 35px 25px;
+    padding: 25px 20px;
   }
 }
