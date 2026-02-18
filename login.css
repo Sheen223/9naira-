@@ -224,13 +224,14 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 16px 24px;
+    padding: 12px 20px;
     height: auto;
+    min-height: unset;
   }
 
   #login-left h1 {
     display: block;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 600;
     margin: 0;
     color: #fff;
@@ -243,7 +244,12 @@ body {
 
   #login-logo {
     margin-bottom: 0;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+  }
+
+  #login-logo img {
+    width: 28px;
+    height: 28px;
   }
 
   #login-right {
@@ -257,4 +263,3 @@ body {
   }
 }
 
-}
