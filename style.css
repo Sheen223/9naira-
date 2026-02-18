@@ -317,7 +317,6 @@ body {
 #creator-link:hover { color: #CFA5E6; }
 
 /* ---- Typography ---- */
-/* h1 - Ubuntu Bold - main hero headings */
 h1 {
   font-family: 'Ubuntu', sans-serif;
   font-size: 3rem;
@@ -328,14 +327,12 @@ h1 {
   color: #fff;
 }
 
-/* h2 - Ubuntu SemiBold - section headings */
 h2 {
   font-family: 'Ubuntu', sans-serif;
   font-size: 1.8rem;
   font-weight: 600;
 }
 
-/* h3 - Merriweather - card and feature headings */
 h3 {
   font-family: 'Merriweather', serif;
   font-size: 1.2rem;
@@ -347,7 +344,7 @@ p {
 }
 
 /* ---- Responsive ---- */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .navbar {
     padding: 12px 20px;
   }
