@@ -179,9 +179,24 @@ body {
   text-align: center;
 }
 
-#pricing h2,
+.pricing-heading {
+  color: #fff !important;
+}
+
 #pricing > p {
   color: #fff !important;
+}
+
+#pricing .card h2 {
+  color: #4645d5 !important;
+}
+
+#pricing .card h3 {
+  color: #1a1a1a;
+}
+
+#pricing .card p {
+  color: #565353cd;
 }
 
 #pricing-cards {
@@ -205,7 +220,6 @@ body {
 
 .card-featured {
   background-color: #1a1a1a !important;
-  color: #fff;
 }
 
 .card-featured h2,
@@ -434,3 +448,4 @@ p {
     justify-content: center;
   }
 }
+
